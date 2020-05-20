@@ -19,6 +19,7 @@ public class HelloWorldController {
         map.put("Yosuke","Hello!");
         map.put("Yosuke2","Hello2!");
         map.put("Yosuke3","Hello3!");
+        map.put("Yosuke4","Hello4!");
         return map;
     }
 
