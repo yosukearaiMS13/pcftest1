@@ -15,11 +15,13 @@ public class HelloWorldController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public Map getHello(){
-        Map<String,String> map = new HashMap<String,String>();
+        Map<String,Object> map = new HashMap<String,Object>();
+        Map<String,String> innerMap = new HashMap<String,String>();
+        innerMap.put("Yosuke_i1","foobar");
+        innerMap.put("Yosuke_i2","hoge");
+        
         map.put("Yosuke","Hello!");
-        map.put("Yosuke2","Hello2!");
-        map.put("Yosuke3","Hello3!");
-        map.put("Yosuke4","Hello4!");
+        map.put("Yosuke2",innerMap);
         return map;
     }
 
